@@ -1,5 +1,5 @@
 :root {
-  --textColor: #1E1E1E;
+  --text-color: #1E1E1E;
   --text-muted: #8D8D8D;
   --text-card-dark-blue: #0D1B39;
   --accent: #E58411;
@@ -15,8 +15,9 @@
   --ui-buriza: #00D6C9;
   --ui-grey: #7C7C7C;
   --ui-dark-blue: #0D1B39;
+
+  --font-main: 'Gilroy', sans-serif;
+  --font-cards: 'Inter', sans-serif;
+  --font-footer-accent: 'DM Sans', sans-serif;
 }
 
-body {
-  color: var(--textColor);
-}
