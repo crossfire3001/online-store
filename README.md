@@ -1,4 +1,4 @@
-# online-store
+# Panto online-store
 
 HTML CSS верстка сайта главной страницы интернет-магазина Panto. Swiper, retina, CSS clamp, табы
 
