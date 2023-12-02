@@ -1,10 +1,9 @@
 @import "./../fonts/Gilroy/stylesheet.css";
 
+// Base
 @import "./base/reset";
 @import "./base/vars";
 @import "./base/base";
 
-p {
-  color: orange;
-  background-color: green;
-}
+// Blocks
+@import "./blocks/header";

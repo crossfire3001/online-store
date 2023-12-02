@@ -110,7 +110,8 @@ html, body {
   color: var(--text-color);
 }
 
-p {
-  color: orange;
-  background-color: green;
+header {
+  background-image: url("./../img/header/header-bg.jpg");
+  background-size: cover;
+  aspect-ratio: 1440/1084;
 }/*# sourceMappingURL=main.css.map */
