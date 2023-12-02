@@ -2,4 +2,10 @@ header {
   background-image: url("./../img/header/header-bg.jpg");
   background-size: cover;
   aspect-ratio: 1440 / 1084;
+
+  @media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    background-image: url("./../img/header/header-bg2k.jpg");
+}
 }
