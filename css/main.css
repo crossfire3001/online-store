@@ -117,12 +117,48 @@ html, body {
 }
 
 header {
+  padding-top: 40px;
+  background-color: var(--footer-bg);
   background-image: url("./../img/header/header-bg.jpg");
   background-size: cover;
   aspect-ratio: 1440/1084;
+  color: var(--header-text-color);
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   header {
     background-image: url("./../img/header/header-bg2k.jpg");
   }
+}
+header a {
+  color: var(--header-text-color);
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  gap: 20px;
+}
+
+.nav__logo {
+  align-self: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.28px;
+  text-transform: capitalize;
+}
+
+.nav-list {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.cart {
+  justify-self: end;
+  align-self: center;
 }/*# sourceMappingURL=main.css.map */
