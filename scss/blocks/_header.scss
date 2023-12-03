@@ -13,3 +13,41 @@ header {
     color: var(--header-text-color);
   }
 }
+
+.header__nav {
+  margin-bottom: 86px;
+}
+
+.header__content {
+  text-align: center;
+}
+
+.header__title {
+  margin-bottom: 14px;
+
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 130%; /* 104px */
+  letter-spacing: -0.8px;
+  text-transform: capitalize;
+}
+
+.header__content p {
+  margin: 0 auto;
+  max-width: 606px;
+  font-size: 24px;
+  line-height: 160%; /* 38.4px */
+}
+
+.header__search {
+  margin-top: 45px;
+}
+
+.search-form {
+}
+
+.search-form__input {
+}
+
+.search-form__btn {
+}
