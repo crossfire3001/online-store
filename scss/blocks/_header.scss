@@ -1,5 +1,7 @@
 header {
+  position: relative;
   padding-top: 40px;
+
   background-color: var(--footer-bg);
   background-image: url("./../img/header/header-bg.jpg");
   background-size: cover;
@@ -35,10 +37,25 @@ header {
 .header__content p {
   margin: 0 auto;
   max-width: 606px;
+  opacity: 0.8;
   font-size: 24px;
   line-height: 160%; /* 38.4px */
 }
 
 .header__search {
   margin: 45px auto 0;
+}
+
+/* Dots */
+
+.header__dot-sofa {
+  position: absolute;
+  left: calc(296 * 100% / 1410); // 1440 = 100% 296 = х || х = 296*100|1440
+  top: calc(684 * 100% / 1075); // 1084
+}
+
+.header__dot-vase {
+  position: absolute;
+  left: 114px;
+  top: 754px;
 }
