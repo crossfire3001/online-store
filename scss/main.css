@@ -216,8 +216,7 @@ nav {
   border-radius: 42px;
   border: 0.862px solid rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .search-form__input {
@@ -225,10 +224,6 @@ nav {
   font-size: 18px;
   font-weight: 700;
   line-height: 150%; /* 27px */
-}
-.search-form__input::-moz-placeholder {
-  color: #fff;
-  font-weight: 400;
 }
 .search-form__input::placeholder {
   color: #fff;
@@ -240,4 +235,6 @@ nav {
   height: 40px;
   border-radius: 24px;
   background: var(--accent);
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
