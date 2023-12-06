@@ -172,8 +172,20 @@ header a {
 
 .header__dot-vase {
   position: absolute;
-  left: 114px;
-  top: 754px;
+  left: 8.085106383%;
+  top: 70.1395348837%;
+}
+
+.header__dot-statue {
+  position: absolute;
+  left: 56.3194444444%;
+  top: 72.6937269373%;
+}
+
+.header__dot-wall {
+  position: absolute;
+  right: 3.2638888889%;
+  top: 75.8302583026%;
 }
 
 nav {
