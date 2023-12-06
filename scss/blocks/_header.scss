@@ -50,22 +50,24 @@ header {
 
 .header__dot-sofa {
   position: absolute;
-  left: calc(
-    296 * 100% / (1440 - 30)
-  ); // 1440 = 100% 296 = х || х = 296*100|1440
-  top: calc(684 * 100% / (1084 - 9)); // 1084
+  left: calc(296 * 100% / 1440); // 1440 = 100% 296 = х || х = 296*100|1440
+  top: calc(684 * 100% / 1084); // 1084
 }
 
 .header__dot-vase {
   position: absolute;
-  left: calc(114 * 100% / 1410);
-  top: calc(754 * 100% / 1075);
+  left: calc(114 * 100% / 1440);
+  top: calc(754 * 100% / 1084);
+
+  transform: translate(-50%, 0%);
 }
 
 .header__dot-statue {
   position: absolute;
   left: calc(811 * 100% / 1440);
   top: calc(788 * 100% / 1084);
+
+  transform: translate(-50%, -50%);
 }
 
 .header__dot-wall {

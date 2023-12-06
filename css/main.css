@@ -166,20 +166,22 @@ header a {
 /* Dots */
 .header__dot-sofa {
   position: absolute;
-  left: 20.9929078014%;
-  top: 63.6279069767%;
+  left: 20.5555555556%;
+  top: 63.0996309963%;
 }
 
 .header__dot-vase {
   position: absolute;
-  left: 8.085106383%;
-  top: 70.1395348837%;
+  left: 7.9166666667%;
+  top: 69.557195572%;
+  transform: translate(-50%, 0%);
 }
 
 .header__dot-statue {
   position: absolute;
   left: 56.3194444444%;
   top: 72.6937269373%;
+  transform: translate(-50%, -50%);
 }
 
 .header__dot-wall {
@@ -284,6 +286,7 @@ nav {
   height: 10px;
   background-color: #fff;
   border-radius: 50%;
+  transition: all 0.2s ease;
 }
 
 .info-dot__radius {
@@ -302,7 +305,7 @@ nav {
 }
 
 .info-dot:hover .info-dot__circle {
-  background-color: orange;
+  background-color: var(--accent);
 }
 
 @keyframes pulse {
