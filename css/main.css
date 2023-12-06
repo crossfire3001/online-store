@@ -315,4 +315,9 @@ nav {
   100% {
     transform: scale(1.2);
   }
+}
+.info-hint {
+  width: 112px;
+  height: 56px;
+  background-image: url("./../img/icons/hint.svg");
 }/*# sourceMappingURL=main.css.map */
