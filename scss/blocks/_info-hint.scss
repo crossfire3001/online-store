@@ -20,7 +20,9 @@
 }
 
 .info-hint__radio:checked + .info-hint__radio-fake {
-  border: 2px solid red;
+  background-image: url("./../img/icons/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .info-hint__radio-fake {
