@@ -333,6 +333,10 @@ nav {
   }
 }
 .info-hint {
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  transform: translate(-50%, -100%);
   display: flex;
   gap: 8px;
   justify-content: center;
