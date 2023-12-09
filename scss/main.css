@@ -138,6 +138,10 @@ body {
   margin: 0 auto;
 }
 
+.d-none {
+  display: none !important;
+}
+
 header {
   position: relative;
   padding-top: 40px;
