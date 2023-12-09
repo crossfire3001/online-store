@@ -418,4 +418,18 @@ nav {
   margin-bottom: 14px;
 }
 
+.benefit__link {
+  display: inline-flex;
+  gap: 13px;
+  align-items: center;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.85; /* 25.9px */
+}
+.benefit__link::after {
+  content: url("./../img/icons/arrow-link.svg");
+  height: 24px;
+}
+
 /*# sourceMappingURL=main.css.map */
