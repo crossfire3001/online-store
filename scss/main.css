@@ -436,6 +436,8 @@ nav {
 }
 
 .products__slider {
+  display: flex;
+  justify-content: center;
   margin-bottom: 60px;
 }
 
@@ -486,6 +488,21 @@ nav {
 }
 .tab-controls__btn--active {
   background-color: #fff;
+}
+
+.card {
+  width: 268px;
+}
+
+.card__photo {
+  height: 240px;
+  background-color: grey;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__desc {
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
