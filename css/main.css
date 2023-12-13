@@ -433,6 +433,7 @@ nav {
   bottom: 0; }
 
 .card__photo {
+  margin-top: 50px;
   height: 240px;
   background-color: #fafafa;
   border-radius: 20px 20px 0 0;
@@ -496,3 +497,7 @@ nav {
   transition: opacity 0.2s ease-in; }
   .card__btn:hover {
     opacity: 0.8; }
+
+.slider {
+  display: flex;
+  gap: 42px; }
