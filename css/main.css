@@ -374,8 +374,6 @@ nav {
   margin-bottom: 80px; }
 
 .products__slider {
-  display: flex;
-  justify-content: center;
   margin-bottom: 60px; }
 
 .products__link {
@@ -499,9 +497,7 @@ nav {
     opacity: 0.8; }
 
 .slider {
-  position: relative;
-  display: flex;
-  gap: 42px; }
+  position: relative; }
 
 .slider__btn {
   border-radius: 50%;
@@ -515,12 +511,14 @@ nav {
 
 .slider__btn--prev {
   position: absolute;
+  z-index: 1;
   top: 50%;
   left: 0;
   transform: translate(-50%, -50%); }
 
 .slider__btn--next {
   position: absolute;
+  z-index: 1;
   right: 0;
   top: 50%;
   transform: translate(50%, -50%); }
