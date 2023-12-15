@@ -116,7 +116,7 @@ legend {
   --header-text-color: #ffffff;
   --footer-accent: #f6973f;
   --footer-bg: #2d2f33;
-  --footer-text-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.8);
   --ui-orange: #e58411;
   --ui-buriza: #00d6c9;
   --ui-grey: #7c7c7c;
@@ -140,6 +140,9 @@ body {
   max-width: 1310px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.container--small {
+  max-width: 1094px;
 }
 
 .d-none {
@@ -608,6 +611,37 @@ nav {
   right: 0;
   top: 50%;
   transform: translate(50%, -50%);
+}
+
+.footer {
+  padding: 118px 0 56px;
+  background-color: var(--footer-bg);
+  color: var(--footer-text-color);
+}
+.footer a {
+  color: var(--footer-text-color);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr 2fr 2fr;
+  gap: 20px;
+}
+
+.footer__nav--services {
+  grid-column-start: 3;
+  margin-bottom: 118px;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__links {
+  display: flex;
+  gap: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
