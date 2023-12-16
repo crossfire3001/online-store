@@ -113,9 +113,6 @@ body {
   font-family: var(--font-main);
   color: var(--text-color); }
 
-body {
-  padding-bottom: 50vh; }
-
 .container {
   max-width: 1310px;
   padding: 0 15px;
@@ -189,17 +186,20 @@ header {
   right: calc(47 * 100% / 1440);
   top: calc(822 * 100% / 1084); }
 
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.28px;
+  text-transform: capitalize;
+  color: #fff !important; }
+
 nav {
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
   gap: 20px; }
 
 .nav__logo {
-  align-self: center;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0.28px;
-  text-transform: capitalize; }
+  align-self: center; }
 
 .nav-list {
   justify-self: center;
@@ -528,23 +528,58 @@ nav {
 .footer {
   padding: 118px 0 56px;
   background-color: var(--footer-bg);
-  color: var(--footer-text-color); }
+  color: var(--footer-text-color);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6; }
   .footer a {
-    color: var(--footer-text-color); }
+    color: var(--footer-text-color);
+    transition: opacity 0.1s ease-in; }
+    .footer a:hover {
+      opacity: 0.8; }
 
 .footer__grid {
   display: grid;
   grid-template-columns: 3fr 1fr 2fr 2fr 2fr;
   gap: 20px; }
 
-.footer__nav--services {
-  grid-column-start: 3;
-  margin-bottom: 118px; }
+.footer__desc {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.6; }
+  .footer__desc p + p {
+    margin-top: 1em; }
+
+.footer__logo {
+  margin-bottom: 29px; }
+
+.footer__nav {
+  display: flex;
+  flex-direction: column; }
+  .footer__nav--services {
+    grid-column-start: 3;
+    margin-bottom: 118px; }
+
+.footer__nav-title {
+  color: var(--footer-accent);
+  font-family: var(--font-footer-accent);
+  font-size: 17px;
+  letter-spacing: -0.232px; }
+
+.footer__list {
+  display: grid;
+  gap: 16px; }
 
 .footer__row {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+
+.footer__copyright {
+  font-family: var(--font-footer-accent);
+  font-size: 15px;
+  letter-spacing: -0.205px;
+  opacity: 0.5; }
 
 .footer__links {
   display: flex;
