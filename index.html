@@ -235,12 +235,12 @@
         <h2 class="products__title">Best Selling Product</h2>
         <div class="products__tabs">
             <div class="tab-controls">
-                <button class="tab-controls__btn tab-controls__btn--active">
+                <button data-tab="chair" class="tab-controls__btn tab-controls__btn">
                     Chair
                 </button>
-                <button class="tab-controls__btn">Beds</button>
-                <button class="tab-controls__btn">Sofa</button>
-                <button class="tab-controls__btn">Lamp</button>
+                <button data-tab="bed" class="tab-controls__btn">Beds</button>
+                <button data-tab="sofa" class="tab-controls__btn">Sofa</button>
+                <button data-tab="lamp" class="tab-controls__btn">Lamp</button>
             </div>
         </div>
         <div class="products__slider">
@@ -250,7 +250,7 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="card swiper-slide">
+                        <div data-tab-value="chair" class="card swiper-slide">
                             <a href="#product-page" class="card__link"></a>
                             <div class="card__photo">
                                 <img
@@ -280,7 +280,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide">
+                        <div data-tab-value="chair" class="card swiper-slide">
                             <a href="#product-page" class="card__link"></a>
                             <div class="card__photo">
                                 <img
@@ -310,7 +310,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide">
+                        <div data-tab-value="bed" class="card swiper-slide">
                             <a href="#product-page" class="card__link"></a>
                             <div class="card__photo">
                                 <img
@@ -321,7 +321,7 @@
                                 />
                             </div>
                             <div class="card__desc">
-                                <a href="#category" class="card__category">Chair</a>
+                                <a href="#category" class="card__category">Bed</a>
                                 <h3 class="card__title">Anjay Chair</h3>
 
                                 <div class="card__rating">
@@ -340,7 +340,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide">
+                        <div data-tab-value="sofa" class="card swiper-slide">
                             <a href="#product-page" class="card__link"></a>
                             <div class="card__photo">
                                 <img
@@ -351,7 +351,7 @@
                                 />
                             </div>
                             <div class="card__desc">
-                                <a href="#category" class="card__category">Chair</a>
+                                <a href="#category" class="card__category">Sofa</a>
                                 <h3 class="card__title">Nyantuy Chair</h3>
 
                                 <div class="card__rating">
@@ -370,7 +370,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide">
+                        <div data-tab-value="lamp" class="card swiper-slide">
                             <a href="#product-page" class="card__link"></a>
                             <div class="card__photo">
                                 <img
@@ -381,7 +381,7 @@
                                 />
                             </div>
                             <div class="card__desc">
-                                <a href="#category" class="card__category">Chair</a>
+                                <a href="#category" class="card__category">Lamp</a>
                                 <h3 class="card__title">Sakarias Armchair</h3>
 
                                 <div class="card__rating">
@@ -400,7 +400,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide">
+                        <div data-tab-value="bed" class="card swiper-slide">
                             <a href="#product-page" class="card__link"></a>
                             <div class="card__photo">
                                 <img
@@ -411,7 +411,7 @@
                                 />
                             </div>
                             <div class="card__desc">
-                                <a href="#category" class="card__category">Chair</a>
+                                <a href="#category" class="card__category">Bed</a>
                                 <h3 class="card__title">Baltsar Chair</h3>
 
                                 <div class="card__rating">
@@ -430,7 +430,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide">
+                        <div data-tab-value="sofa" class="card swiper-slide">
                             <a href="#product-page" class="card__link"></a>
                             <div class="card__photo">
                                 <img
@@ -441,7 +441,7 @@
                                 />
                             </div>
                             <div class="card__desc">
-                                <a href="#category" class="card__category">Chair</a>
+                                <a href="#category" class="card__category">Sofa</a>
                                 <h3 class="card__title">Anjay Chair</h3>
 
                                 <div class="card__rating">
@@ -460,7 +460,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide">
+                        <div data-tab-value="lamp" class="card swiper-slide">
                             <a href="#product-page" class="card__link"></a>
                             <div class="card__photo">
                                 <img
@@ -471,7 +471,7 @@
                                 />
                             </div>
                             <div class="card__desc">
-                                <a href="#category" class="card__category">Chair</a>
+                                <a href="#category" class="card__category">Lamp</a>
                                 <h3 class="card__title">Nyantuy Chair</h3>
 
                                 <div class="card__rating">
@@ -484,6 +484,187 @@
 
                                 <div class="card__footer">
                                     <div class="card__price" data-value="$">921</div>
+                                    <button class="card__btn">
+                                        <img src="./img/icons/plus.svg" alt="Add to cart"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-tab-value="bed" class="card swiper-slide">
+                            <a href="#product-page" class="card__link"></a>
+                            <div class="card__photo">
+                                <img
+                                        src="./img/products/chair-02.png"
+                                        srcset="./img/products/chair-02@2x.png 2x"
+                                        alt="chair"
+                                        class="card__img"
+                                />
+                            </div>
+                            <div class="card__desc">
+                                <a href="#category" class="card__category">Bed</a>
+                                <h3 class="card__title">Baltsar Chair</h3>
+
+                                <div class="card__rating">
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star-off.svg" alt=""/>
+                                </div>
+
+                                <div class="card__footer">
+                                    <div class="card__price" data-value="$">299</div>
+                                    <button class="card__btn">
+                                        <img src="./img/icons/plus.svg" alt="Add to cart"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab-value="sofa" class="card swiper-slide">
+                            <a href="#product-page" class="card__link"></a>
+                            <div class="card__photo">
+                                <img
+                                        src="./img/products/chair-03.png"
+                                        srcset="./img/products/chair-03@2x.png 2x"
+                                        alt="chair"
+                                        class="card__img"
+                                />
+                            </div>
+                            <div class="card__desc">
+                                <a href="#category" class="card__category">Sofa</a>
+                                <h3 class="card__title">Anjay Chair</h3>
+
+                                <div class="card__rating">
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                </div>
+
+                                <div class="card__footer">
+                                    <div class="card__price" data-value="$">519</div>
+                                    <button class="card__btn">
+                                        <img src="./img/icons/plus.svg" alt="Add to cart"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab-value="lamp" class="card swiper-slide">
+                            <a href="#product-page" class="card__link"></a>
+                            <div class="card__photo">
+                                <img
+                                        src="./img/products/chair-04.png"
+                                        srcset="./img/products/chair-04@2x.png 2x"
+                                        alt="chair"
+                                        class="card__img"
+                                />
+                            </div>
+                            <div class="card__desc">
+                                <a href="#category" class="card__category">Lamp</a>
+                                <h3 class="card__title">Nyantuy Chair</h3>
+
+                                <div class="card__rating">
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                </div>
+
+                                <div class="card__footer">
+                                    <div class="card__price" data-value="$">921</div>
+                                    <button class="card__btn">
+                                        <img src="./img/icons/plus.svg" alt="Add to cart"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab-value="sofa" class="card swiper-slide">
+                            <a href="#product-page" class="card__link"></a>
+                            <div class="card__photo">
+                                <img
+                                        src="./img/products/chair-04.png"
+                                        srcset="./img/products/chair-04@2x.png 2x"
+                                        alt="chair"
+                                        class="card__img"
+                                />
+                            </div>
+                            <div class="card__desc">
+                                <a href="#category" class="card__category">Sofa</a>
+                                <h3 class="card__title">Nyantuy Chair</h3>
+
+                                <div class="card__rating">
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                </div>
+
+                                <div class="card__footer">
+                                    <div class="card__price" data-value="$">921</div>
+                                    <button class="card__btn">
+                                        <img src="./img/icons/plus.svg" alt="Add to cart"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab-value="lamp" class="card swiper-slide">
+                            <a href="#product-page" class="card__link"></a>
+                            <div class="card__photo">
+                                <img
+                                        src="./img/products/chair-01.png"
+                                        srcset="./img/products/chair-01@2x.png 2x"
+                                        alt="chair"
+                                        class="card__img"
+                                />
+                            </div>
+                            <div class="card__desc">
+                                <a href="#category" class="card__category">Lamp</a>
+                                <h3 class="card__title">Sakarias Armchair</h3>
+
+                                <div class="card__rating">
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                </div>
+
+                                <div class="card__footer">
+                                    <div class="card__price" data-value="$">392</div>
+                                    <button class="card__btn">
+                                        <img src="./img/icons/plus.svg" alt="Add to cart"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab-value="bed" class="card swiper-slide">
+                            <a href="#product-page" class="card__link"></a>
+                            <div class="card__photo">
+                                <img
+                                        src="./img/products/chair-02.png"
+                                        srcset="./img/products/chair-02@2x.png 2x"
+                                        alt="chair"
+                                        class="card__img"
+                                />
+                            </div>
+                            <div class="card__desc">
+                                <a href="#category" class="card__category">Bed</a>
+                                <h3 class="card__title">Baltsar Chair</h3>
+
+                                <div class="card__rating">
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star.svg" alt=""/>
+                                    <img src="./img/icons/star-off.svg" alt=""/>
+                                </div>
+
+                                <div class="card__footer">
+                                    <div class="card__price" data-value="$">299</div>
                                     <button class="card__btn">
                                         <img src="./img/icons/plus.svg" alt="Add to cart"/>
                                     </button>

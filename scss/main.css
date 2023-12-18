@@ -493,6 +493,9 @@ nav {
 .tab-controls__btn--active {
   background-color: #fff;
 }
+.tab-controls__btn--active:hover {
+  background-color: #fff;
+}
 
 .card {
   font-family: var(--font-cards);
