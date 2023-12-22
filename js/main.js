@@ -29,19 +29,19 @@ const swiper = new Swiper(".swiper", {
   freeMode: true,
 
   /* breakpoints: {
-                                            640: {
-                                              slidesPerView: 2,
-                                              spaceBetween: 20,
-                                            },
-                                            768: {
-                                              slidesPerView: 4,
-                                              spaceBetween: 40,
-                                            },
-                                            1024: {
-                                              slidesPerView: 5,
-                                              spaceBetween: 50,
-                                            },
-                                          },  */
+                                                    640: {
+                                                      slidesPerView: 2,
+                                                      spaceBetween: 20,
+                                                    },
+                                                    768: {
+                                                      slidesPerView: 4,
+                                                      spaceBetween: 40,
+                                                    },
+                                                    1024: {
+                                                      slidesPerView: 5,
+                                                      spaceBetween: 50,
+                                                    },
+                                                  },  */
 
   // Navigation arrows
   navigation: {
@@ -66,10 +66,15 @@ for (let btn of tabsBtns) {
 
     // Отобразить нужные товары и скрыть ненужные товары
     for (let product of tabsProducts) {
-      if (product.dataset.tabValue === this.dataset.tab) {
+      // Проверка на отображение всех слайдов
+      if (this.dataset.tab === "all") {
         product.classList.remove("d-none");
       } else {
-        product.classList.add("d-none");
+        if (product.dataset.tabValue === this.dataset.tab) {
+          product.classList.remove("d-none");
+        } else {
+          product.classList.add("d-none");
+        }
       }
     }
     // Update Swiper
